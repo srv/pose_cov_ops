@@ -10,13 +10,16 @@
 #include <iostream>
 #include <mrpt/poses/CPose3D.h>
 
-#if PACKAGE_ROS_VERSION == 1
+// #if PACKAGE_ROS_VERSION == 1
+// #include <mrpt/ros1bridge/pose.h>
+// namespace m2r = mrpt::ros1bridge;
+// #else
+// #include <mrpt/ros2bridge/pose.h>
+// namespace m2r = mrpt::ros2bridge;
+// #endif
+
 #include <mrpt/ros1bridge/pose.h>
 namespace m2r = mrpt::ros1bridge;
-#else
-#include <mrpt/ros2bridge/pose.h>
-namespace m2r = mrpt::ros2bridge;
-#endif
 
 TEST(PoseCovOps, composition) {
   using namespace std;

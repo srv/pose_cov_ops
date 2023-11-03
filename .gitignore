@@ -7,3 +7,4 @@ LOG_*
 
 CMakeLists.txt.user*
 .vscode
+CATKIN_IGNORE
